@@ -1,7 +1,8 @@
 .image{
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 800px;
+    margin: 100px;
+    float: left;
+}
+
+img:hover{
+    transform: scaleY(-1);
 }
