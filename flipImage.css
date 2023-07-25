@@ -14,11 +14,48 @@ button{
     background-color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
     color: white;
     background-color: gray;
+}
+
+.flipContainer {
+    perspective: 1000px;
+}
+
+.flipper:hover{
+    transform: rotateY(180deg);
+}
+
+.flipContainer, .front, .back {
+    width: 300px;
+    height: 300px;
+}
+
+.flipper {
+    transition-duration: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    font-size: 50px;
+    text-align: center;
+    transform: rotateY(180deg);
 }
 
 
