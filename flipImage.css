@@ -6,13 +6,20 @@
 .section {
     flex: 0 35%;
     box-sizing: border-box;
-    
 }
 
-.upButton {
-    border: solid black;
-    border-width: 2px 2px 0 0;
-    transform: rotate(-45deg);
-    padding: 4px;
+button{
+    font-size: 25px;
+    transition-duration: .3s;
     background-color: white;
+    border: none;
+    border-radius: 5px;
 }
+
+button:hover {
+    color: white;
+    background-color: gray;
+}
+
+
+
