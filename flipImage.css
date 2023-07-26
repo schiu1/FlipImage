@@ -26,13 +26,13 @@ button:hover {
     perspective: 1000px;
 }
 
-.flipContainer:hover .flipper, .flipContainer.hover .flipper{
+.flipContainer:hover .flipper, .flipContainer.hover .flipper, .flipContainer.flip .flipper{
     transform: rotateY(180deg);
 }
 
 .flipContainer, .front, .back {
     width: 300px;
-    height: 300px;
+    height: 268px;
 }
 
 .flipper {
@@ -50,12 +50,14 @@ button:hover {
 
 .front {
     z-index: 2;
+    background-color: grey;
 }
 
 .back {
     font-size: 50px;
     text-align: center;
     transform: rotateY(180deg);
+    background-color: grey;
 }
 
 
