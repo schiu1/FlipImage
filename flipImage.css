@@ -26,8 +26,20 @@ button:hover {
     perspective: 1000px;
 }
 
-.flipContainer:hover .flipper, .flipContainer.hover .flipper, .flipContainer.flip .flipper{
+.flipContainer.flipX .flipper{
     transform: rotateY(180deg);
+}
+
+.flipContainer.flip-X .flipper{
+    transform: rotateY(-180deg);
+}
+
+.flipContainer.flipY .flipper{
+    transform: rotateX(180deg);
+}
+
+.flipContainer.flip-Y .flipper{
+    transform: rotateX(-180deg);
 }
 
 .flipContainer, .front, .back {
