@@ -35,10 +35,12 @@ button:hover {
 }
 
 .flipContainer.flipY .flipper{
+    transform-origin: 100% 134px;
     transform: rotateX(180deg);
 }
 
 .flipContainer.flip-Y .flipper{
+    transform-origin: 100% 134px;
     transform: rotateX(-180deg);
 }
 
