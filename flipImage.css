@@ -22,10 +22,11 @@ button:hover {
     background-color: gray;
 }
 
-.flipContainer {
+.flipContainer, .flipContainer2, .flipContainer3, .flipContainer4 {
     perspective: 1000px;
 }
 
+/* top left */
 .flipContainer.flipX .flipper{
     transform: rotateY(180deg);
 }
@@ -44,12 +45,70 @@ button:hover {
     transform: rotateX(-180deg);
 }
 
-.flipContainer, .front, .back {
+/* top right */
+.flipContainer2.flipX .flipper2{
+    transform: rotateY(180deg);
+}
+
+.flipContainer2.flip-X .flipper2{
+    transform: rotateY(-180deg);
+}
+
+.flipContainer2.flipY .flipper2{
+    transform-origin: 100% 134px;
+    transform: rotateX(180deg);
+}
+
+.flipContainer2.flip-Y .flipper2{
+    transform-origin: 100% 134px;
+    transform: rotateX(-180deg);
+}
+
+/* bottom left */
+.flipContainer3.flipX .flipper3{
+    transform: rotateY(180deg);
+}
+
+.flipContainer3.flip-X .flipper3{
+    transform: rotateY(-180deg);
+}
+
+.flipContainer3.flipY .flipper3{
+    transform-origin: 100% 134px;
+    transform: rotateX(180deg);
+}
+
+.flipContainer3.flip-Y .flipper3{
+    transform-origin: 100% 134px;
+    transform: rotateX(-180deg);
+}
+
+/* bottom right */
+.flipContainer4.flipX .flipper4{
+    transform: rotateY(180deg);
+}
+
+.flipContainer4.flip-X .flipper4{
+    transform: rotateY(-180deg);
+}
+
+.flipContainer4.flipY .flipper4{
+    transform-origin: 100% 134px;
+    transform: rotateX(180deg);
+}
+
+.flipContainer4.flip-Y .flipper4{
+    transform-origin: 100% 134px;
+    transform: rotateX(-180deg);
+}
+
+.flipContainer, .flipContainer2, .flipContainer3, .flipContainer4,  
+.front, .back {
     width: 300px;
     height: 268px;
 }
 
-.flipper {
+.flipper, .flipper2, .flipper3, .flipper4 {
     transition-duration: 0.6s;
     transform-style: preserve-3d;
     position: relative;

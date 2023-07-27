@@ -2,22 +2,21 @@ let flippedX = false;
 let flippedNegX = false;
 let flippedY = false;
 let flippedNegY = false;
-function FlipImage(axis, img){
-    const i = document.getElementById(img);
+function FlipImage(axis, container){
     if(axis == "x" && !flippedNegX && !flippedY & !flippedNegY){
-        document.querySelector(".flipContainer").classList.toggle("flipX");
+        document.querySelector(container).classList.toggle("flipX");
         flippedX = !flippedX;
     }
     else if (axis == "-x" && !flippedX && !flippedY & !flippedNegY){
-        document.querySelector(".flipContainer").classList.toggle("flip-X");
+        document.querySelector(container).classList.toggle("flip-X");
         flippedNegX = !flippedNegX;
     }
     else if (axis == "y" && !flippedNegX && !flippedX & !flippedNegY){
-        document.querySelector(".flipContainer").classList.toggle("flipY");
+        document.querySelector(container).classList.toggle("flipY");
         flippedY = !flippedY;
     }
     else if (axis == "-y" && !flippedNegX && !flippedX & !flippedY){
-        document.querySelector(".flipContainer").classList.toggle("flip-Y");
+        document.querySelector(container).classList.toggle("flip-Y");
         flippedNegY = !flippedNegY;
     }
 }
