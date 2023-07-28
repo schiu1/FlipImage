@@ -10,29 +10,13 @@ history.set(".flipContainer3", "");
 history.set(".flipContainer4", "");
 
 function FlipImage(axis, container){
-    /*if(axis == "x" && !flippedNegX && !flippedY & !flippedNegY){
-        document.querySelector(container).classList.toggle("flipX");
-        flippedX = !flippedX;
-    }*/
-    if(axis == "x" && (history.get(container) == "" || history.get(container) == "x")){
-        document.querySelector(container).classList.toggle("flipX");
+    if(history.get(container) == "" || history.get(container) == axis){
+        document.querySelector(container).classList.toggle("flip" + axis.toUpperCase());
         if(history.get(container) == ""){
-            history.set(container, "x");
+            history.set(container, axis);
         }
-        else if (history.get(container) == "x"){
-            history.get(container, "");
+        else if (history.get(container) == axis){
+            history.set(container, "");
         }
-    }
-    else if (axis == "-x" && !flippedX && !flippedY & !flippedNegY){
-        document.querySelector(container).classList.toggle("flip-X");
-        flippedNegX = !flippedNegX;
-    }
-    else if (axis == "y" && !flippedNegX && !flippedX & !flippedNegY){
-        document.querySelector(container).classList.toggle("flipY");
-        flippedY = !flippedY;
-    }
-    else if (axis == "-y" && !flippedNegX && !flippedX & !flippedY){
-        document.querySelector(container).classList.toggle("flip-Y");
-        flippedNegY = !flippedNegY;
     }
 }
