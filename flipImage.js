@@ -9,7 +9,7 @@ history.set(".flipContainer2", "");
 history.set(".flipContainer3", "");
 history.set(".flipContainer4", "");
 
-function FlipImage(axis, container){
+function FlipImage(axis, container, button){
     if(history.get(container) == "" || history.get(container) == axis){
         document.querySelector(container).classList.toggle("flip" + axis.toUpperCase());
         if(history.get(container) == ""){
@@ -18,5 +18,6 @@ function FlipImage(axis, container){
         else if (history.get(container) == axis){
             history.set(container, "");
         }
+        document.querySelector(button).classList.toggle("pressed");
     }
 }

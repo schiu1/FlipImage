@@ -17,6 +17,10 @@ button{
     cursor: pointer;
 }
 
+.pressed {
+    background-color: lightblue;
+}
+
 button:hover {
     color: white;
     background-color: gray;
