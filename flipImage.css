@@ -1,3 +1,7 @@
+body{
+    background-color: beige;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -11,14 +15,14 @@
 button{
     font-size: 25px;
     transition-duration: .3s;
-    background-color: white;
+    background-color: beige;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .pressed {
-    background-color: lightblue;
+    background-color: lightgreen;
 }
 
 button:hover {
@@ -123,6 +127,8 @@ button:hover {
     position: absolute;
     top: 0;
     left: 0;
+    overflow: hidden;
+    border-radius: 2rem;
 }
 
 .front {
@@ -131,10 +137,13 @@ button:hover {
 }
 
 .back {
+    font-family: "Gill Sans", sans-serif;
     font-size: 50px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform: rotateY(180deg);
-    background-color: grey;
+    background: linear-gradient(lightblue 0%, rgb(248, 76, 76) 100%);
 }
 
 
