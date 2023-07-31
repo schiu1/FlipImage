@@ -21,3 +21,15 @@ function FlipImage(axis, container, button){
         document.querySelector(button).classList.toggle("pressed");
     }
 }
+
+function ChangeImage(){
+    const link = document.getElementById('newImage').value;
+    const nodeList = document.querySelectorAll('img');
+    if(link.match(/\.(jpeg|jpg|png)$/) == null){ 
+        alert("Invalid URL");
+        return; 
+    }
+    for(let i = 0; i < nodeList.length; i++){
+        nodeList[i].src = link;
+    }
+}

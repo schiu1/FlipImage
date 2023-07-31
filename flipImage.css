@@ -148,5 +148,18 @@ button:hover {
     background: linear-gradient(lightblue 0%, rgb(248, 76, 76) 100%);
 }
 
+.newImageButton{
+    font-size: 20px;
+    transition-duration: .3s;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newImageButton:hover{
+    background-color: green;
+}
+
 
 

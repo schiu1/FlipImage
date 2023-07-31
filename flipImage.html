@@ -12,7 +12,7 @@
             <div class="flipContainer">
                 <div class="flipper">
                     <div class="front">
-                        <img src="knight.jpg">
+                        <img src="knight.jpg" onerror="alert('Failed to load Image')">
                     </div>
                     <div class="back">
                         Welcome
@@ -81,6 +81,9 @@
             </div>
         </div>
     </div>
+    <label for="newImage">Use an image from a URL: </label>
+    <input type="url" id="newImage">
+    <button class="newImageButton" onclick="ChangeImage()">Display</button>
     <script src="flipImage.js"></script>
 </body>
 </html>
