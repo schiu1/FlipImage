@@ -24,12 +24,20 @@ function FlipImage(axis, container, button){
 
 function ChangeImage(){
     const link = document.getElementById('newImage').value;
-    const nodeList = document.querySelectorAll('img');
-    if(link.match(/\.(jpeg|jpg|png)$/) == null){ 
-        alert("Invalid URL");
+    if(link.match(/\.(jpeg|jpg|png)/) == null){ 
+        alert("Not a valid image type. (JPEG/JPG/PNG)");
         return; 
     }
+    const nodeList = document.querySelectorAll('img');
     for(let i = 0; i < nodeList.length; i++){
+        nodeList[i].onload = function(){
+            nodeList[i].style.height = "268px";
+            nodeList[i].style.width = "300px";
+            console.log(i.toString() + ": " + nodeList[i].height.toString() + " x " 
+            + nodeList[i].height.toString());
+        }
+        console.log(i.toString() + ": " + nodeList[i].height.toString() + " x " 
+            + nodeList[i].height.toString());
         nodeList[i].src = link;
     }
 }
