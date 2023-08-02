@@ -24,10 +24,20 @@ function FlipImage(axis, container, button){
 
 function ChangeImage(){
     const link = document.getElementById('newImage').value;
+    
     if(link.match(/\.(jpeg|jpg|png)/) == null){ 
         alert("Not a valid image type. (JPEG/JPG/PNG)");
         return; 
     }
+    
+    const request = new XMLHttpRequest();
+    request.open("GET", link, false);
+    request.send();
+    if(request.status != 200){
+        alert("Image does not exist.");
+        return;
+    }
+    
     const nodeList = document.querySelectorAll('img');
     for(let i = 0; i < nodeList.length; i++){
         nodeList[i].onload = function(){
