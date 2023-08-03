@@ -10,7 +10,7 @@
  - The last feature of the App is being able to use your own image through a URL! If it is a working URL that leads to an image, it will display in all four images, otherwise it will alert the user if it fails any of these checks. How it checks if it is an image is using a Regular Expression that includes image filetypes. How it checks if it is a valid URL is XMLHttpRequest, which tests to see if the test request status is OK or errornous. 
 
  This App helped me in:
-    - Learning how to make a flip animation and teach me more about general CSS styling
-    - Using class toggling to add/remove styles to HTML elements
-    - Refreshing my knowledge on regular expressions
-    - Learning how to test URLs before applying changes to elements
+ - Learning how to make a flip animation and teach me more about general CSS styling
+ - Using class toggling to add/remove styles to HTML elements
+ - Refreshing my knowledge on regular expressions
+ - Learning how to test URLs before applying changes to elements
